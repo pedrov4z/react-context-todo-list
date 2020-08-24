@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 0.8rem 'Open Sans';
+}
+
+body {
+  background-color: lightgray;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

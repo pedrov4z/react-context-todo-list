@@ -1,0 +1,81 @@
+.item-container {
+  width: 90%;
+  
+  display: flex;
+  justify-content: center;
+
+  margin: 1rem 0;
+}
+
+.item-container + .item-container {
+  margin-top: 0;
+}
+
+.item-text {
+  width: 70%;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem 1rem;
+}
+
+.item-text .descricao,
+.item-text .titulo {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.item-text .titulo {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.item-text .descricao {
+  resize: none;
+}
+
+.item-crud {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 4rem;
+}
+
+.item-crud .crud-update,
+.item-crud .crud-delete {
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: background-color .5s;
+}
+
+.item-crud .crud-update {
+  background-color: #155fa0;
+
+  border-top-right-radius: 0.3rem;
+}
+
+.item-crud .crud-update:hover {
+  background-color: #1e88e5;
+}
+
+.item-crud .crud-delete {
+  background-color: #ab003c;
+
+  border-bottom-right-radius: 0.3rem;
+}
+
+.item-crud .crud-delete:hover {
+  background-color: #f50057;
+}
